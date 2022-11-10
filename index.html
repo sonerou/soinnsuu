@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>素因数分解練習</title>
+</head>
+<body>
+<h1>素因数分解練習</h1>
+<h3>上級</h3>
+<form><input type="button" value="合成数生成" onClick="altRan()"> <span id="rnd">-</span></form> 
+
+<script type="text/javascript">
+function altRan() {
+	var i = Math.floor(Math.random() * 16) +1; //乱数の発生
+if( i = 1) { i =2 
+} else if ( i= 2) { i=3
+} else if ( i= 3) { i=5
+} else if ( i= 4) { i=7
+} else if ( i= 5) { i=11
+} else if ( i= 6) { i=13
+} else if ( i= 7) { i=17
+} else if ( i= 8) { i=19
+} else if ( i= 9) { i=23
+} else if ( i= 10) { i=29
+} else if ( i= 11) { i=31
+} else if ( i= 12) { i=37
+} else if ( i= 13) { i=41
+} else if ( i= 14) { i=43
+} else if ( i= 15) { i=47
+} else if ( i= 16) { i=53
+}
+        while( i<10000 ) {
+i=i*i
+}
+	document.getElementById("rnd").innerHTML = i; //値の出力
+}
+</script>
+</html>
